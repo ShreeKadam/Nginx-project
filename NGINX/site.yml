@@ -1,0 +1,7 @@
+---
+- name: Host multiple websites with NGINX
+  hosts: all
+  become: true
+  roles:
+    - nginx-playbook
+
