@@ -39,11 +39,13 @@
   copy:
     src: site1.com.conf
     dest: /etc/nginx/conf.d/site1.com.conf
+    mode: '0400'
 
 - name: Copy virtual host config for site2
   copy:
     src: site2.com.conf
     dest: /etc/nginx/conf.d/site2.com.conf
+    mode: '0400'
 
 - name: Test NGINX configuration
   command: nginx -t
